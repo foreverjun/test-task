@@ -1,0 +1,22 @@
+C:\Users\kmn19\RiderProjects\test pr\test pr\bin\Debug\net5.0\test pr.exe
+C:\Users\kmn19\RiderProjects\test pr\test pr\bin\Debug\net5.0\test pr.deps.json
+C:\Users\kmn19\RiderProjects\test pr\test pr\bin\Debug\net5.0\test pr.runtimeconfig.json
+C:\Users\kmn19\RiderProjects\test pr\test pr\bin\Debug\net5.0\test pr.runtimeconfig.dev.json
+C:\Users\kmn19\RiderProjects\test pr\test pr\bin\Debug\net5.0\test pr.dll
+C:\Users\kmn19\RiderProjects\test pr\test pr\bin\Debug\net5.0\ref\test pr.dll
+C:\Users\kmn19\RiderProjects\test pr\test pr\bin\Debug\net5.0\test pr.pdb
+C:\Users\kmn19\RiderProjects\test pr\test pr\bin\Debug\net5.0\Google.Apis.dll
+C:\Users\kmn19\RiderProjects\test pr\test pr\bin\Debug\net5.0\Google.Apis.Auth.PlatformServices.dll
+C:\Users\kmn19\RiderProjects\test pr\test pr\bin\Debug\net5.0\Google.Apis.Auth.dll
+C:\Users\kmn19\RiderProjects\test pr\test pr\bin\Debug\net5.0\Google.Apis.Core.dll
+C:\Users\kmn19\RiderProjects\test pr\test pr\bin\Debug\net5.0\Google.Apis.Drive.v3.dll
+C:\Users\kmn19\RiderProjects\test pr\test pr\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\kmn19\RiderProjects\test pr\test pr\obj\Debug\net5.0\test pr.csproj.AssemblyReference.cache
+C:\Users\kmn19\RiderProjects\test pr\test pr\obj\Debug\net5.0\test pr.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kmn19\RiderProjects\test pr\test pr\obj\Debug\net5.0\test pr.AssemblyInfoInputs.cache
+C:\Users\kmn19\RiderProjects\test pr\test pr\obj\Debug\net5.0\test pr.AssemblyInfo.cs
+C:\Users\kmn19\RiderProjects\test pr\test pr\obj\Debug\net5.0\test pr.csproj.CoreCompileInputs.cache
+C:\Users\kmn19\RiderProjects\test pr\test pr\obj\Debug\net5.0\test pr.dll
+C:\Users\kmn19\RiderProjects\test pr\test pr\obj\Debug\net5.0\ref\test pr.dll
+C:\Users\kmn19\RiderProjects\test pr\test pr\obj\Debug\net5.0\test pr.pdb
+C:\Users\kmn19\RiderProjects\test pr\test pr\obj\Debug\net5.0\test pr.genruntimeconfig.cache
