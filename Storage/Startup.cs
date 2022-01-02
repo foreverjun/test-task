@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.OpenApi.Models;
 using Google.Apis.Auth.AspNetCore3;
 using Google.Apis.Auth.OAuth2;
@@ -41,9 +42,20 @@ namespace Storage
                 {
                     o.DefaultChallengeScheme = GoogleOpenIdConnectDefaults.AuthenticationScheme;
                     o.DefaultForbidScheme = GoogleOpenIdConnectDefaults.AuthenticationScheme;
-                    o.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                    o.DefaultScheme = (CookieAuthenticationDefaults.AuthenticationScheme);    
                 })
-                .AddCookie()
+                .AddCookie(options =>
+                {
+                    options.Events.OnRedirectToLogin = context =>
+                    {
+                        if (context.Response.StatusCode == 200)
+                        {
+                            context.Response.StatusCode = 401;
+                        }
+
+                        return Task.CompletedTask;
+                    };
+                })  
                 .AddGoogleOpenIdConnect(options =>
                 {
                     options.ClientId = clientSecrets.ClientId;
@@ -60,10 +72,14 @@ namespace Storage
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Storage v1"));
+            } else
+            {
+                app.UseExceptionHandler("/Error");
+                app.UseHsts();
             }
+            
             app.UseDefaultFiles();
             app.UseStaticFiles();
-            app.UseHttpsRedirection();
             app.UseRouting();
             app.UseCors(builder => builder
                 .AllowAnyOrigin()
