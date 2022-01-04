@@ -22,7 +22,7 @@ namespace Storage.Controllers
     
     public class AuthController : Controller
     {
-        [GoogleScopedAuthorize(DriveService.ScopeConstants.DriveFile, Oauth2Service.ScopeConstants.UserinfoProfile)]
+        [GoogleScopedAuthorize(DriveService.ScopeConstants.DriveFile, Oauth2Service.ScopeConstants.UserinfoProfile, DriveService.ScopeConstants.Drive)]
         [HttpGet("Auth")]
         public async Task<LocalRedirectResult> Auth()
         {
