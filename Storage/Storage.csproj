@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Google.Apis.Auth.AspNetCore3" Version="1.55.0" />
+        <PackageReference Include="Google.Apis.Drive.v3" Version="1.55.0.2502" />
+        <PackageReference Include="Google.Apis.Oauth2.v2" Version="1.55.0.1869" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="6.0.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Controllers" />
+    </ItemGroup>
+
+</Project>
